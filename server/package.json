@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "8.1.1",
+    "npm": "5.6.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "server": "nodemon src/index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "^4.16.2",
+    "faker": "^4.1.0",
+    "mongoose": "^4.13.7",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.13.2"
+  }
+}
