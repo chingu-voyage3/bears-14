@@ -5,3 +5,5 @@ dev.js
 shared-credentials
 
 .DS_Store
+
+.vscode
