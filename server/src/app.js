@@ -7,6 +7,7 @@ const path = require('path');
 const keys = require('./config/keys');
 
 const authRoutes = require('./routes/authRoutes');
+const apiRoutes = require('./routes/apiRoutes');
 
 const app = express();
 
@@ -25,6 +26,7 @@ app.use(passport.session());
 
 // set up routes
 app.use('/auth', authRoutes);
+app.use('/api', apiRoutes);
 
 // serve react assests when in production
 if (process.env.NODE_ENV === 'production') {
