@@ -5,7 +5,7 @@ const User = mongoose.model('User');
 const Event = mongoose.model('Event');
 
 const USER_TOTAL = 3;
-const EVENT_TOTAL = 5;
+const EVENT_TOTAL = 3;
 
 module.exports =  async () => {
   try {
