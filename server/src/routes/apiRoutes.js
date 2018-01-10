@@ -13,7 +13,7 @@ router.get('/events', async (req, res, next) => {
   } catch (e) {
     next(e);
   }
-});
+})
 
 // logout user
 router.get('/logout', requireLogin, (req, res) => {
