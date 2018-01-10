@@ -16,15 +16,4 @@ router.get('/google/callback',
   }
 );
 
-// logout user
-router.get('/logout', requireLogin, (req, res) => {
-  req.logout();
-  res.redirect('/');
-});
-
-// get user info
-router.get('/user', (req, res) => {
-  res.send(req.user);
-});
-
 module.exports = router;
