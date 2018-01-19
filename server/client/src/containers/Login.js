@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import emblem from './images/rrc_emblem.jpg';
+import emblem from '../images/rrc_emblem.jpg';
 
 class Login extends Component {
   render() {
@@ -8,7 +8,7 @@ class Login extends Component {
       <form className="jumbotron container">
 
         <div className="text-center mb-4">
-          <img src={emblem} style={{ height: 300, width: 300, marginBottom: 20 }}/>
+          <img src={emblem} style={{ height: 300, width: 300, marginBottom: 20 }} alt="emblem"/>
           <h2 style={{ margin: "0 auto" }}>Login Form</h2>
         </div>
 
